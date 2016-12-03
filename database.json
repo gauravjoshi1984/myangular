@@ -1,0 +1,34 @@
+{
+    "records":[
+        {
+            "name":"Mehul",
+            "age":"32",
+            "email":"mehul@gmail.com",
+            "sex":"male",
+            "password":"mehul@1234"
+        },
+        {
+            "name":"Ankit",
+            "age":"31",
+            "email":"ankit@gmail.com",
+            "sex":"male",
+            "password":"ankit@1234"
+        },
+        {
+            "name":"Buzzer",
+            "age":"32",
+            "email":"gaurav@gmail.com",
+            "sex":"male",
+            "password":"gaurav@1234"
+        },
+        {
+            "name":"Tiki",
+            "age":"32",
+            "email":"tiki@gmail.com",
+            "sex":"female",
+            "password":"tiki@1234"
+        }
+
+    ]
+    
+}

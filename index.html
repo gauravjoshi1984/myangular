@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">  
+    <title>MY ANGULAR APP</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+  
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="controller.js"></script>
+    <script src="angular-route.min.js"></script>
+
+
+
+  </head>
+
+
+
+
+  <body ng-app ="myApp">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">HOME PAGE</a>
+            <a class="navbar-brand" href="/index.html#/signup">CREATE USER</a>
+        </div>
+    </div>
+</nav>
+    <cointainer>  
+        <div ng-view>
+
+        </div>
+    </cointainer>  
+<!--
+  <!using ng-init and ng-repeat>
+    <div ng-init="myUsers=[{name:'gaurav',designation:'software manager'},
+                          {name:'rakesh',designation:'production manager'},
+                          {name:'suresh',designation:'fund manager'},
+                          {name:'prakash',designation:'design manager'}]">
+       <p ng-repeat = "users in myUsers">
+          Name : {{users.name}}<br>
+          Designation : {{users.designation}}<br>
+       </p>
+    </div>
+<!END OF USING ng-init and ng-repeat>-->
+<!--
+<!using controller>
+    <div ng-controller="languages">
+      Select you favourate language :
+        <button ng-click='php()'>PHP</button>
+        <button ng-click='java()'>JAVA</button>
+        <button ng-click='cpp()'>C++</button>
+        <button ng-click='jscript()'>JAVA SCRIPT</button>
+        <p>You have selected : {{myFavLanguage}}</p>
+    </div>
+
+    <script>
+      var app = angular.module('myApp',[]);
+      app.controller('languages',function($scope){
+        $scope.myFavLanguage = 'none';
+
+        $scope.php = function(){
+          $scope.myFavLanguage = 'PHP';
+        };
+
+        $scope.java = function(){
+          $scope.myFavLanguage = 'JAVA';
+        };
+
+        $scope.cpp = function(){
+          $scope.myFavLanguage = 'C++';
+        };
+
+        $scope.jscript = function(){
+          $scope.myFavLanguage = 'JAVASCRIPT';
+        };
+      })
+
+    </script>
+  <!End of controller>-->
+
+  </body>
+
+</html>

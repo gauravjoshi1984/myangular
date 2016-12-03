@@ -1,0 +1,68 @@
+
+<div class="container">
+    <div class="header">
+            <h1 class="register-title">Welcome</h1>
+    </div>    
+</div>    
+  <!--<form class="register">
+    <div class="register-switch">
+      <input type="radio" name="sex" value="F" id="sex_f" class="register-switch-input" checked>
+      <label for="sex_f" class="register-switch-label">Female</label><br>
+      <input type="radio" name="sex" value="M" id="sex_m" class="register-switch-input">
+      <label for="sex_m" class="register-switch-label">Male</label>
+    </div>
+      <h4><input type="email" class="register-input" placeholder="Email address"></h4><br>
+    <h4><input type="password" class="register-input" placeholder="Password"></h4><br>
+    <input id="inputbutton" type="button" value="Create Account" class="register-button">
+  </form> -->
+<div class = "container main.content">
+ 
+    <div ng-controller="registerForm">
+     <form ng-submit="register()">
+         <div class="form-group">
+             <label for="Name">Name</label>
+             <input type="text" class="form-control" ng-model="formModel.name" id="name" required=
+                    "required">
+         </div>
+         
+         <div class="form-group">
+             <label for="email">Email</label>
+             <input type="email" class="form-control" ng-model="formModel.email" id="email" required=
+                    "required">
+         </div>
+         
+         <div class="form-group">
+             <label for="password">Password</label>
+             <input type="password" class="form-control" ng-model="formModel.password" id="password" required=
+                    "required">
+         </div>
+         
+         <div class="form-group">
+             <label for="age">Age</label>
+             <input type="age" class="form-control" ng-model="formModel.age" id="age" required=
+                    "required">
+         </div>
+         
+          <div class="form-group">
+             <label for="sex">Sex</label>
+             <select name="sex" class="form-control" ng-model="formModel.sex" id="sex" required=
+                    "required">
+                 <option value="">Please select</option>
+                 <option value="Male">Male</option>
+                 <option value="Female">Female</option>
+              </select>  
+         </div>
+         
+         <div class="form-group">
+             <button type="submit">REGISTER</button>
+         </div>
+         
+         
+     </form>
+        
+        <!--<pre>{{formModel | json }}</pre>-->
+ </div>
+
+</div>    
+
+       
